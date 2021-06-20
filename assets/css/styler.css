@@ -447,7 +447,7 @@ hr {
     font-weight: 400;
     border-radius: 0px;
     line-height: 1;
-    -moz-user-select: none;
+    /* -moz-user-select: none; */
     letter-spacing: 1px;
     line-height: 0;
     margin-bottom: 0;
@@ -552,7 +552,7 @@ hr {
     border-radius: 5px;
     text-transform: capitalize;
     padding: 19px 47px;
-    -moz-user-select: none;
+    /* -moz-user-select: none; */
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
@@ -1939,18 +1939,19 @@ hr {
     -moz-animation-name: float-bob;
     -moz-animation-duration: 2s;
     -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
+    /* -moz-animation-timing-function: linear; */
     -ms-animation-name: float-bob;
     -ms-animation-duration: 2s;
     -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
+    /* -ms-animation-timing-function: linear; */
     -o-animation-name: float-bob;
     -o-animation-duration: 2s;
     -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: linear
+    /* -o-animation-timing-function: linear */
 }
 
-@-webkit-keyframes float-bob {
+
+/* @-webkit-keyframes float-bob {
     0% {
         -webkit-transform: translateY(-20px);
         transform: translateY(-20px)
@@ -1963,18 +1964,19 @@ hr {
         -webkit-transform: translateY(-20px);
         transform: translateY(-20px)
     }
-}
+} */
 
 .heartbeat {
     animation: heartbeat 1s infinite alternate
 }
 
-@-webkit-keyframes heartbeat {
+
+/* @-webkit-keyframes heartbeat {
     to {
         -webkit-transform: scale(1.03);
         transform: scale(1.03)
     }
-}
+} */
 
 .rotateme {
     -webkit-animation-name: rotateme;
@@ -2883,7 +2885,7 @@ hr {
 }
 
 .slider-area {
-    margin-top: -250px;
+    margin-top: -200px;
     background-image: url(../img/hero/h1_hero1.png);
     background-repeat: no-repeat;
     background-position: top center;
@@ -2915,6 +2917,7 @@ hr {
 }
 
 .slider-area .hero__caption h1 {
+    width: 70%;
     overflow: hidden;
     font-size: 65px;
     font-weight: 700;
@@ -3014,22 +3017,27 @@ hr {
     .slider-area {
         margin-top: 0px;
         padding-bottom: 250px;
+        background-image: url(../img/gallery/footer_bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        background-attachment: fixed
     }
     #head1 {
         margin-top: 100px;
         width: 100%;
         margin-left: 0%;
-        font-size: 40px;
+        font-size: 35px;
     }
     #head2 {
         width: 100%;
         margin-left: 0%;
-        font-size: 40px;
+        font-size: 35px;
     }
     #potter {
         width: 100%;
         text-align: center;
-        margin-top: 250px;
+        margin-top: 300px;
         margin-left: -15px;
         font-size: 18px;
     }
@@ -3163,6 +3171,7 @@ hr {
 
 .thumb-content>h3 {
     text-align: center!important;
+    margin-left: 10%!important;
 }
 
 .slider-area .thumb-content-box {
@@ -3173,7 +3182,7 @@ hr {
     width: 49%;
 }
 
-@media only screen and (min-width: 1199px) and (max-width: 1520px) {
+@media only screen and (min-width: 1199px) and (max-width: 1400px) {
     .slider-area .thumb-content-box {
         padding-top: 700px;
         width: 70%;
@@ -3184,6 +3193,7 @@ hr {
     .thumb-content>h3 {
         font-size: 45px!important;
         text-align: center;
+        margin-left: 10%!important;
     }
 }
 
@@ -3201,6 +3211,9 @@ hr {
     .thumb-content>h3 {
         text-align: center;
         font-size: 30px!important;
+        margin-left: 10%!important;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
@@ -3288,7 +3301,7 @@ hr {
     background: rgba(209, 159, 104, 0.7)
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 1200px) {
     .slider-area .thumb-content-box .thumb-content {
         width: 100%;
         padding-top: 50px;
@@ -3657,10 +3670,10 @@ hr {
 .best-pricing .pricing-list ul li {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     color: #010101;
-    margin-bottom: 18px
+    margin-bottom: 30px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3678,7 +3691,7 @@ hr {
 .best-pricing .pricing-list ul li span {
     color: #d19f68 !important;
     font-weight: 400;
-    font-size: 16px
+    font-size: 17px
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3725,7 +3738,10 @@ hr {
     }
     #price-2 {
         text-align: center;
-        margin-bottom: 250px;
+        margin-bottom: 450px;
+    }
+    .price-margin {
+        padding-left: 8px;
     }
 }
 
@@ -3803,7 +3819,7 @@ hr {
     }
 }
 
-@media (min-width: 1401px) and (max-width: 1600px) {
+@media (min-width: 1401px) {
     .best-pricing .pricing-img .pricing-img2 {
         left: 59%;
         width: 33%
@@ -3850,8 +3866,8 @@ hr {
 @media (max-width: 575px) {
     .best-pricing .pricing-img .pricing-img2 {
         bottom: 0%;
-        left: 25%;
-        width: 50%;
+        left: 5%;
+        width: 90%;
     }
 }
 
@@ -4272,6 +4288,7 @@ hr {
 
 #appointment {
     margin-bottom: 100px;
+    overflow-x: hidden;
 }
 
 .appointment-title {
@@ -4280,6 +4297,26 @@ hr {
     margin-bottom: 50px;
     margin-top: 50px;
     width: 100%;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .appointment-title {
+        font-size: 40px!important;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .appointment-title {
+        font-size: 30px!important;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        width: 100%;
+    }
 }
 
 .appointment-form {
@@ -4303,6 +4340,13 @@ hr {
     width: 47%;
     margin-left: 25%;
     font-weight: 500;
+}
+
+#appointment-img {
+    border-top: solid 30px #d19f68;
+    border-right: solid 30px #d19f68!important;
+    width: 90%;
+    margin-left: 10%;
 }
 
 #slot {
@@ -4402,6 +4446,7 @@ hr {
     #appointment-img {
         width: 100%;
         margin-top: 100px;
+        margin-left: 0%;
     }
 }
 
@@ -4823,7 +4868,7 @@ hr {
 .blog_area a:hover,
 .blog_area a :hover {
     background: -webkit-linear-gradient(131deg, #d19f68 0%, #d19f68 99%);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
     text-decoration: none;
     transition: .4s
@@ -4880,7 +4925,7 @@ hr {
 .single-blog .tag {
     text-align: left;
     display: inline-block;
-    float: left;
+    /* float: left; */
     font-size: 13px;
     font-weight: 300;
     margin-right: 22px;
